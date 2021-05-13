@@ -1,4 +1,4 @@
-import sortByChildren from './cc13.js';
+import { sortByChildren } from './CC13.js';
 
 let characters = [
   {

@@ -1,5 +1,13 @@
 export const sortByChildren = (charArray) => {
-  for (let i = 0; i <= charArray.length; i++) {
-    console.log(i);
-  }
+  charArray.sort((a, b) => {
+    if (a.children.length < b.children.length) {
+      return -1;
+    } else {
+      return 1;
+    }
+  });
+  return charArray;
+
 };
+
+// charArray.sort((a, b) => ((a.children > b.children) ? 1 : -1)
